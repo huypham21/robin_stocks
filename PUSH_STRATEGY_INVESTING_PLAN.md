@@ -1,7 +1,7 @@
 # PUSH Strategy Investing Plan
 
 Huy’s preference sheet for the Robinhood MCP account (`••••1725`, options L3).  
-Updated: ~5:47 AM CT, Wed Nov 4, 2026. **Not financial advice.**
+Updated: ~5:50 AM CT, Wed Nov 4, 2026. **Not financial advice.**
 
 One cash-secured put (CSP) reserves **strike × 100** in buying power.
 
@@ -29,6 +29,7 @@ Cash is mostly locked as collateral (~$4,050). Need ~**$1,200+** free BP (or a c
 | Tenor | **~30 DTE** entry (weeklies such as Dec 4 when in that window) |
 | Premium target | **1.5–2%** of collateral per month (`credit ÷ strike`); up to ~3–5% OK when IV is rich and delta stays about **−0.15 to −0.25** |
 | Strike style | OTM puts you would **own if assigned**; prefer POP ~**70–85%** |
+| **Hard event gate** | Verify next earnings from **company IR page or SEC 8-K**; **reject** if **earnings**, **investor day**, **FDA/regulatory decision**, or **ex-dividend** falls **on or before expiry**. Broker calendar alone is insufficient when it conflicts with IR/8-K |
 | **Profit take** | **Buy to close at 50% of credit** — GTC limit BTC placed **immediately after CSP fill** |
 | **21 DTE** | If not yet at 50% profit by **21 DTE** → **close or roll** (credit only) |
 | **Defense** | Put mark **≥ 2× credit** OR stock **closes below strike** → review: **roll out** (and **down** if possible) for a **net credit**, or **accept assignment only if** post-assignment shares are **≤ 35% of account**. **No debit rolls** |
@@ -63,7 +64,7 @@ Source playbook: YouTube PUSH video (`youtu.be/dZi8Vafw6TA`).
 
 ### Avoid / defer
 
-- **Skip till after earnings** — do not open a new CSP if earnings fall before expiration; re-quote after the report
+- **Hard event gate** — before any new CSP preview/place, verify the next earnings date from the **company IR page or an SEC 8-K**. **Reject** if **earnings**, **investor day**, **FDA/regulatory decision**, or **ex-dividend date** falls **on or before expiry**
 - Deprioritize **crypto-miners** (RIOT, WULF, IREN, CORZ, APLD, BMNR, GLXY, etc.) — poor “own if assigned” fit despite high IV
 - Do not stack another short put on an underlying already open (**SOFI / LYFT / RIVN** while live)
 - Wide-spread / illiquid names (e.g. video-style IOT) are not first trades
@@ -98,13 +99,13 @@ Weekday timers: ~**9:30 AM CT** (suggestions) and a management check (50% / 21 D
 | Avg put volume (10d) | ≥ 2,000 |
 | Put open interest | ≥ 5,000 |
 
-**Ranking bias:** prefer $12–$28 ownable names → check earnings → quote ~30 DTE OTM puts in the 1.5–2% yield band → suggest. Never place a **new CSP** without “preview” / “place”.
+**Ranking bias:** prefer $12–$28 ownable names → **hard event gate (IR / 8-K)** → quote ~30 DTE OTM puts in the 1.5–2% yield band → suggest. Never place a **new CSP** without “preview” / “place”.
 
 ---
 
 ## Operating checklist
 
-1. **Screen → size → preview → place** — SOFI-like names only; drop earnings conflicts. Confirm BP ≥ strike × 100. Place CSP only after explicit confirmation.
+1. **Screen → hard event gate → size → preview → place** — SOFI-like names only. Confirm IR page or SEC 8-K: no earnings, investor day, FDA/regulatory decision, or ex-div on/before expiry. Confirm BP ≥ strike × 100. Place CSP only after explicit confirmation; reject (do not treat as a go-trade) any name that fails the hard event gate.
 2. **On CSP fill** — Immediately place GTC BTC at 50% of credit. PUSH ≥50% of credit to VOO when authorized for that name.
 3. **Manage to 21 DTE** — Let the 50% BTC work. At 21 DTE if still open: close or roll out for a net credit (down in strike if possible). No debit rolls.
 4. **Defense** — If put ≥ 2× credit or stock closes below strike: run a roll/assign review. Assignment only if 100 shares would be ≤ 35% of account value.
@@ -128,4 +129,5 @@ Short puts can assign 100 shares on a gap-down. Premium does not offset large de
 | **PUSH** | Deploy ≥50% of option premium into equities (here: VOO) |
 | **BTC** | Buy to close — close a short option |
 | **50% of credit** | Buy-back price = half the premium originally received |
-| **Skip till after** | Wait until earnings are reported before selling a put that expires after that report |
+| **Hard event gate** | IR page or SEC 8-K verification; reject if earnings / investor day / FDA-regulatory / ex-div is on or before expiry |
+| **Skip till after** | Informal name for waiting out a catalyst that fails the hard event gate |
